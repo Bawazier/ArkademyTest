@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas 10.3.4 Arkademy</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1 class="text-center font-weight-bold">Manage Product</h1>
+    </header>
+    <main class="product-form">
+        <form>
+            <label for="product_name">Product Name</label>
+            <input class="form-control" type="text" id="product_name" name="product_name">
+            <label for="product_explanation">Explanation</label>
+            <textarea class="form-control" type="text" id="product_explanation" name="product_explanation"></textarea>
+            <label for="product_price">Price</label>
+            <input class="form-control" type="number" id="product_price" name="product_price">
+            <label for="product_total">Total Items</label>
+            <input class="form-control" type="number" id="product_total" name="product_total">
+            <br>
+            <button class="btn btn-primary">
+                Insert Product
+            </button>
+        </form>
+        <br>
+        <table class="table table-bordered">
+            <tr>
+                <td scope="col">Product Name</td>
+                <td scope="col">Explanation</td>
+                <td scope="col">Price</td>
+                <td scope="col">Total</td>
+                <td scope="col">Action</td>
+            </tr>
+            <tr>
+                <td class="produkName"></td>
+                <td class="produkExplan"></td>
+                <td class="produkPrice"></td>
+                <td class="produkTotal"></td>
+                <td class="action"></td>
+            </tr>
+            
+        </table>
+    </main>
+
+    <script src="client.js"></script>
+</body>
+</html>
